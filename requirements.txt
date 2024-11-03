@@ -1,4 +1,4 @@
-google-colab==1.0.0
+google-colab @ file:///colabtools/dist/google_colab-1.0.0.tar.gz
 absl-py==1.4.0
 accelerate==0.34.2
 aiohappyeyeballs==2.4.3
@@ -165,7 +165,6 @@ google-cloud-storage==2.18.2
 google-cloud-translate==3.15.5
 google-cloud-videointelligence==2.14.0
 google-cloud-vision==3.8.0
-google-colab @ file:///colabtools/dist/google_colab-1.0.0.tar.gz
 google-crc32c==1.6.0
 google-generativeai==0.8.3
 google-pasta==0.2.0
