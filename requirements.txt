@@ -162,7 +162,6 @@ google-cloud-storage==2.18.2
 google-cloud-translate==3.15.5
 google-cloud-videointelligence==2.13.5
 google-cloud-vision==3.7.4
-google-colab @ file:///colabtools/dist/google_colab-1.0.0.tar.gz#sha256=d2cedbf9b9c24085bbb24ea54da85c03455ad0c9595f6dc08d91ab721222575e
 google-crc32c==1.6.0
 google-generativeai==0.7.2
 google-pasta==0.2.0
@@ -507,10 +506,7 @@ tokenizers==0.19.1
 toml==0.10.2
 tomli==2.0.1
 toolz==0.12.1
-torch @ https://download.pytorch.org/whl/cu121_full/torch-2.4.1%2Bcu121-cp310-cp310-linux_x86_64.whl#sha256=f3ed9a2b7f8671b2b32a2f036d1b81055eb3ad9b18ba43b705aa34bae4289e1a
-torchaudio @ https://download.pytorch.org/whl/cu121_full/torchaudio-2.4.1%2Bcu121-cp310-cp310-linux_x86_64.whl#sha256=da8c87c80a1c1376a48dc33eef30b03bbdf1df25a05bd2b1c620b8811c7b19be
 torchsummary==1.5.1
-torchvision @ https://download.pytorch.org/whl/cu121_full/torchvision-0.19.1%2Bcu121-cp310-cp310-linux_x86_64.whl#sha256=b8cc4bf381b75522995b601e07a1b433b5fd925dc3e34a7fa6cd22f449d65379
 tornado==6.3.3
 tqdm==4.66.5
 traitlets==5.7.1
@@ -647,7 +643,6 @@ ecos==2.0.14
 editdistance==0.8.1
 eerepr==0.0.4
 einops==0.8.0
-en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl#sha256=86cc141f63942d4b2c5fcee06630fd6f904788d2f0ab005cce45aadb8fb73889
 entrypoints==0.4
 et-xmlfile==1.1.0
 etils==1.9.4
@@ -714,7 +709,6 @@ google-cloud-storage==2.18.2
 google-cloud-translate==3.15.5
 google-cloud-videointelligence==2.13.5
 google-cloud-vision==3.7.4
-google-colab @ file:///colabtools/dist/google_colab-1.0.0.tar.gz#sha256=d2cedbf9b9c24085bbb24ea54da85c03455ad0c9595f6dc08d91ab721222575e
 google-crc32c==1.6.0
 google-generativeai==0.7.2
 google-pasta==0.2.0
@@ -1059,10 +1053,7 @@ tokenizers==0.19.1
 toml==0.10.2
 tomli==2.0.1
 toolz==0.12.1
-torch @ https://download.pytorch.org/whl/cu121_full/torch-2.4.1%2Bcu121-cp310-cp310-linux_x86_64.whl#sha256=f3ed9a2b7f8671b2b32a2f036d1b81055eb3ad9b18ba43b705aa34bae4289e1a
-torchaudio @ https://download.pytorch.org/whl/cu121_full/torchaudio-2.4.1%2Bcu121-cp310-cp310-linux_x86_64.whl#sha256=da8c87c80a1c1376a48dc33eef30b03bbdf1df25a05bd2b1c620b8811c7b19be
 torchsummary==1.5.1
-torchvision @ https://download.pytorch.org/whl/cu121_full/torchvision-0.19.1%2Bcu121-cp310-cp310-linux_x86_64.whl#sha256=b8cc4bf381b75522995b601e07a1b433b5fd925dc3e34a7fa6cd22f449d65379
 tornado==6.3.3
 tqdm==4.66.5
 traitlets==5.7.1
