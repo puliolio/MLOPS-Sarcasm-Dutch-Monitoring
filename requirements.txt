@@ -560,3 +560,4 @@ yellowbrick==1.5
 yfinance==0.2.48
 zipp==3.20.2
 zstandard==0.23.0
+dbus-python
