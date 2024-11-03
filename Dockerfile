@@ -8,18 +8,19 @@ ENV MODEL_NAME=sarcastic-model
 ENV MODEL_BASE_PATH=/models
 ENV PORT=8501
 
-# Set TensorFlow environment variables to limit resource usage
+# Set memory and thread limiting environment variables
 ENV TF_CPP_MIN_LOG_LEVEL=2
 ENV TF_FORCE_GPU_ALLOW_GROWTH=true
 ENV TF_NUM_INTEROP_THREADS=1
 ENV TF_NUM_INTRAOP_THREADS=1
 
-# Specify the CMD with reduced parallelism and additional optimization flags
-CMD tensorflow_model_server \
+# Create a shell script to run the server
+RUN echo '#!/bin/bash\n\
+    tensorflow_model_server \
     --port=8500 \
-    --rest_api_port=${PORT} \
-    --model_name=${MODEL_NAME} \
-    --model_base_path=${MODEL_BASE_PATH}/${MODEL_NAME} \
+    --rest_api_port=$PORT \
+    --model_name=$MODEL_NAME \
+    --model_base_path=$MODEL_BASE_PATH/$MODEL_NAME \
     --tensorflow_session_parallelism=1 \
     --tensorflow_intra_op_parallelism=1 \
     --tensorflow_inter_op_parallelism=1 \
@@ -27,6 +28,12 @@ CMD tensorflow_model_server \
     --num_unload_threads=1 \
     --rest_api_num_threads=2 \
     --grpc_max_threads=2 \
-    --per_process_gpu_memory_fraction=0.25 \
     --enable_batching=false \
-    "$@"
+    --enable_model_warmup=false \
+    --file_system_poll_wait_seconds=0 \
+    --flush_filesystem_caches=false \
+    "$@"' > /usr/local/bin/start_server.sh && \
+    chmod +x /usr/local/bin/start_server.sh
+
+# Use the shell script as the entry point
+CMD ["/usr/local/bin/start_server.sh"]
