@@ -46,7 +46,7 @@ chex==0.1.87
 clarabel==0.9.0
 click==8.1.7
 cloudpathlib==0.20.0
-cloudpickle==2.0.0
+cloudpickle==2.2.1
 cmake==3.30.5
 cmdstanpy==1.2.4
 colorama==0.4.6
