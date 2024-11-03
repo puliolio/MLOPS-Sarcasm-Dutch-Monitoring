@@ -190,7 +190,6 @@ httpx==0.27.2
 huggingface-hub==0.24.7
 humanize==4.11.0
 hyperopt==0.2.7
-ibis-framework==9.2.0
 idna==3.10
 imageio==2.36.0
 imageio-ffmpeg==0.5.1
@@ -278,7 +277,6 @@ mdurl==0.1.2
 miniKanren==1.0.3
 missingno==0.5.2
 mistune==3.0.2
-mizani==0.13.0
 mkl==2024.2.2
 ml-dtypes==0.3.2
 ml-metadata==1.15.0
