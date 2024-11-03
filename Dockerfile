@@ -1,6 +1,6 @@
 FROM tensorflow/serving:latest
 
-COPY ./output/serving_model /models/sarcastic-model
+COPY ./output/serving_model/daffa-mh-pipeline/deutch-sarcastic-detection-model /models/sarcastic-model
 ENV MODEL_NAME=sarcastic-model
 ENV PORT=8501
 
