@@ -1,3 +1,4 @@
+google-colab==1.0.0
 absl-py==1.4.0
 accelerate==0.34.2
 aiohappyeyeballs==2.4.3
