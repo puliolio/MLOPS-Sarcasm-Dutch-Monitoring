@@ -1,19 +1,12 @@
-# global:
-#   scrape_interval: 15s
-
-# scrape_configs:
-#   - job_name: "sarcasm-prediction"
-#     static_configs:
-#       - targets: ["localhost:5000"]
 global:
   scrape_interval: 15s
   evaluation_interval: 15s
   external_labels:
-    monitor: "localhost:9090"
+    monitor: "tf-serving-monitor"
 
 scrape_configs:
   - job_name: "prometheus"
     scrape_interval: 5s
     metrics_path: /monitoring/prometheus/metrics
     static_configs:
-      - targets: ["https://sarcasm-prediction-47530a71590e.herokuapp.com/"]
+      - targets: ["mlops-sarcasm-dutch-monitoring-production.up.railway.app"]
