@@ -339,7 +339,7 @@ orjson==3.10.10
 osqp==0.6.7.post3
 overrides==7.7.0
 packaging==24.1
-pandas==1.5.3
+pandas==2.2.0 
 pandas-datareader==0.10.0
 pandas-gbq==0.24.0
 pandas-stubs==2.2.2.240909
